@@ -62,5 +62,3 @@ class Robot:
         if self.x is not None and self.y is not None and self.facing is not None:
             return f"{self.x},{self.y},{self.facing}"
         return None
-
-
