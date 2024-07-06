@@ -19,6 +19,9 @@ class Robot:
             self.y = y
             self.facing = facing.upper() # converting to uppercase for case-sensitivity
 
+        else:
+            print(f"Warning: Invalid PLACE command with position ({x}, {y}) and facing '{facing}'")
+            
     def move(self):
         """
         Moves the robot one unit in the given direction provided the move is valid
