@@ -1,5 +1,4 @@
 from table import Table
-
 class Robot:
     """
     Represents that the robot can be placed, moved or rotated (left and right) on the table
@@ -36,7 +35,6 @@ class Robot:
             new_y -=1
         elif self.facing == 'WEST':
             new_x -=1
-
         # checking if the new position is valid
         if self.table.is_valid_position(new_x, new_y):
             self.x, self.y = new_x, new_y
@@ -64,9 +62,5 @@ class Robot:
         if self.x is not None and self.y is not None and self.facing is not None:
             return f"{self.x},{self.y},{self.facing}"
         return None
-
-
-           
-
 
 
