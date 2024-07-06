@@ -13,10 +13,6 @@ class Table:
         """
         Checks if the position of the robot(x,y) is within the boundaries of the table
         """
-        if 0 <= x < self.width:
-            if 0 < y < self.height:
-                return True
-            else:
-                return False
-            
+        if 0 <= x < self.width and 0 <= y < self.height:
+            return True
         return False
