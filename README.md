@@ -71,7 +71,7 @@ Before you begin, ensure you have met the following requirements:
 ### Configuration
 
 The Toy Robot Simulator uses a configuration file `config.json` located in the `config` folder. You can specify the commands file path in this configuration:
-    ```json
+   
      
     {
     "commands_file": "../input.txt"
