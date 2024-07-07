@@ -5,6 +5,9 @@ class Robot:
     """
     DIRECTIONS = ['NORTH', 'EAST' , 'SOUTH', 'WEST']
     def __init__(self, table):
+        """
+        Initialises robot with reference to table and set configuration(x,y) and direction to None.
+        """
         self.table = table
         self.x = None
         self.y = None
@@ -21,7 +24,7 @@ class Robot:
 
         else:
             print(f"Warning: Invalid PLACE command with position ({x}, {y}) and facing '{facing}'")
-            
+
     def move(self):
         """
         Moves the robot one unit in the given direction provided the move is valid
@@ -38,6 +41,7 @@ class Robot:
             new_y -=1
         elif self.facing == 'WEST':
             new_x -=1
+
         # checking if the new position is valid
         if self.table.is_valid_position(new_x, new_y):
             self.x, self.y = new_x, new_y
