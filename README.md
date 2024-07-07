@@ -73,9 +73,9 @@ Before you begin, ensure you have met the following requirements:
 The Toy Robot Simulator uses a configuration file `config.json` located in the `config` folder. You can specify the commands file path in this configuration:
 
     ```json
-{
+     {
     "commands_file": "../input.txt"
-}
+     }
 
 ### Commands
 The simulator accepts the following commands:
@@ -93,10 +93,10 @@ To run the unit tests for the Toy Robot Simulator, use the following command:
     ```bash
     PYTHONPATH=src python -m unittest discover -s tests -p 'test_*.py'
 
-###Contributing
-Contributions are welcome! If you find any issues or have suggestions for improvements, please open an issue or a pull request on GitHub.
+### Contributing
+Contributions are welcome! If you find any issues or have suggestions for improvements, please open an issue or a pull request on GitHub. <br>
 
-License
+### License
 This project is licensed under the MIT License.
 
 
