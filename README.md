@@ -47,11 +47,12 @@ Before you begin, ensure you have met the following requirements:
    cd Toy-Robot-Simulator/src
 
 3. Run 
-   ```bash
+   ```python
    python main.py 
 
 ### Folder Structure
--Toy-Robot-Simulator
+
+- Toy-Robot-Simulator
   - README.md
   - src
     - robot.py
@@ -66,6 +67,31 @@ Before you begin, ensure you have met the following requirements:
   - config
     - config.json
   - input.txt
-  
+
+### Configuration
+
+The Toy Robot Simulator uses a configuration file `config.json` located in the `config` folder. You can specify the commands file path in this configuration:
+
+```json
+{
+    "commands_file": "../input.txt"
+}
+
+### Commands
+The simulator accepts the following commands:
+
+- **PLACE X,Y,FACING:** Place the robot on the table at position X,Y and facing NORTH, SOUTH, EAST, or WEST.
+- **MOVE:** Move the robot one unit in the direction it is facing.
+- **LEFT:** Rotate the robot 90 degrees to the left.
+- **RIGHT:** Rotate the robot 90 degrees to the right.
+- **REPORT:** Output the current coordinates and facing direction of the robot.
+
+### Tests
+
+To run the unit tests for the Toy Robot Simulator, use the following command:
+
+```bash
+PYTHONPATH=src python -m unittest discover -s tests -p 'test_*.py'
+
 
 
