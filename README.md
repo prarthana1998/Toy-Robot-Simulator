@@ -35,17 +35,17 @@ The application is a simulation of a toy robot moving on a square tabletop, of d
 - Git (optional)
 
 ### Installation
-
-1. Clone the repository: to your local machine
    
-```bash
-  git clone git@github.com:prarthana1998/Toy-Robot-Simulator.git
+1. **Clone the repository:**
+   
+   ```bash
+   git clone git@github.com:prarthana1998/Toy-Robot-Simulator.git
 
 2. Navigate to the project src directory
- ```bash
-  cd /Toy-Robot-Simulator/src
+   '''bash
+   cd Toy-Robot-Simulator/src
 
-3. Run ```bash python main.py 
+4. Run ```bash python main.py 
 
-4. 
+5. 
 
