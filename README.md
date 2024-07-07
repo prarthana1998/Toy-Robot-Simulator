@@ -8,7 +8,7 @@
 - [Getting Started](#getting-started)
   - [Prerequisites](#prerequisites)
   - [Installation](#installation)
-- [Usage](#usage)
+- [Folder Structure](#folder-structure)
 - [Configuration](#configuration)
 - [Commands](#commands)
 - [Tests](#tests)
@@ -31,8 +31,9 @@ The application is a simulation of a toy robot moving on a square tabletop, of d
 
 ### Prerequisites
 
-- Python 3.x
-- Git (optional)
+Before you begin, ensure you have met the following requirements:
+
+- [Python](https://www.python.org/downloads/): Ensure Python is installed on your system. You can download Python from the official website.
 
 ### Installation
    
@@ -42,10 +43,29 @@ The application is a simulation of a toy robot moving on a square tabletop, of d
    git clone git@github.com:prarthana1998/Toy-Robot-Simulator.git
 
 2. Navigate to the project src directory
-   '''bash
+   ```bash
    cd Toy-Robot-Simulator/src
 
-4. Run ```bash python main.py 
+3. Run 
+   ```bash
+   python main.py 
 
-5. 
+### Folder Structure
+-Toy-Robot-Simulator
+  - README.md
+  - src
+    - robot.py
+    - table.py
+    - main.py
+    - utils.py
+    - commands.py
+  - tests
+    - test_robot.py
+    - test_table.py
+    - test_rotation.py
+  - config
+    - config.json
+  - input.txt
+  
+
 
