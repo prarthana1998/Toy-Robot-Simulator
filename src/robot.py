@@ -17,6 +17,9 @@ class Robot:
         """
         Places the robot in the specified position(x,y) and direction
         """
+        if not isinstance(facing, str):
+            print(f"Warning: 'facing' must be a string")
+            return
         try:
             # Check if x and y can be converted to integers
             x = int(x)

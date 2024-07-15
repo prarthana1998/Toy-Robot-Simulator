@@ -14,6 +14,11 @@ class TestRobot(unittest.TestCase):
         self.robot.place(0, 'b', 'NORTH')
         self.assertEqual((self.robot.x, self.robot.y, self.robot.facing), (None, None, None))
 
+    def test_place_invalid_facing(self):
+        self.robot.place(1, 1, 8)
+        self.assertEqual((self.robot.x, self.robot.y, self.robot.facing), (None, None, None))
+    
+
     def test_place_valid(self):
         self.robot.place(0, 0, 'NORTH')
         self.assertEqual((self.robot.x, self.robot.y, self.robot.facing), (0, 0, 'NORTH'))
