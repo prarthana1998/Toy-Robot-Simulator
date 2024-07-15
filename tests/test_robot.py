@@ -7,6 +7,13 @@ class TestRobot(unittest.TestCase):
         self.table = Table(5, 5)
         self.robot = Robot(self.table)
 
+    def test_place_invalid_x_y(self):
+        self.robot.place('a', 0, 'NORTH')
+        self.assertEqual((self.robot.x, self.robot.y, self.robot.facing), (None, None, None))
+
+        self.robot.place(0, 'b', 'NORTH')
+        self.assertEqual((self.robot.x, self.robot.y, self.robot.facing), (None, None, None))
+
     def test_place_valid(self):
         self.robot.place(0, 0, 'NORTH')
         self.assertEqual((self.robot.x, self.robot.y, self.robot.facing), (0, 0, 'NORTH'))

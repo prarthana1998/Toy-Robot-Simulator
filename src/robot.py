@@ -17,6 +17,14 @@ class Robot:
         """
         Places the robot in the specified position(x,y) and direction
         """
+        try:
+            # Check if x and y can be converted to integers
+            x = int(x)
+            y = int(y)
+        except ValueError:
+            print(f"Warning: Invalid PLACE command with position ({x}, {y}) and facing '{facing}'")
+            return
+        
         if self.table.is_valid_position(x, y) and facing.upper() in self.DIRECTIONS:
             self.x = x
             self.y = y
@@ -60,7 +68,7 @@ class Robot:
         """
         if self.facing is not None:
             current_index = self.DIRECTIONS.index(self.facing)
-            self.facing = self.DIRECTIONS[(current_index + 1) % 4] # for the index to wrap in case it goes below 0
+            self.facing = self.DIRECTIONS[(current_index + 1) % 4] # for the index to wrap in case it goes above 0
 
     def report(self):
         """
